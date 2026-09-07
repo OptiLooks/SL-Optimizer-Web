@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SL-Optimizer — Optimizador de Linux para cualquier distro</title>
+<meta name="description" content="SL-Optimizer ajusta swap, caché, TRIM y limpieza de paquetes en 29 distribuciones de Linux, sin instalar dependencias externas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrap">
+        <a href="index.html" class="brand"><span class="dot"></span>SL-Optimizer</a>
+        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Inicio</a>
+            <a href="downloads.html" class="nav-link">Descargas</a>
+            <a href="compatibilidad.html" class="nav-link">Compatibilidad</a>
+            <a href="about.html" class="nav-link">Acerca de</a>
+            <a href="https://github.com/OptiLooks/SL-Optimizer" class="gh-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                GitHub
+            </a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="wrap hero-grid">
+        <div>
+            <span class="eyebrow-tag">$ ./SL-Optimizer.sh</span>
+            <h1>Tu Linux, ajustado en un par de minutos.</h1>
+            <p class="lede">SL-Optimizer detecta tu distro y tu entorno de escritorio, y aplica ajustes de memoria, caché, TRIM y limpieza de paquetes. Un solo script, sin dependencias que instalar.</p>
+            <div class="hero-actions">
+                <a href="downloads.html" class="btn btn-primary">Descargar SL-Optimizer</a>
+                <a href="https://github.com/OptiLooks/SL-Optimizer" class="btn btn-outline" target="_blank" rel="noopener">Ver el código</a>
+            </div>
+            <div class="hero-meta">
+                <span class="chip chip-accent">v0.2 · lanzado hoy</span>
+                <span class="chip">29 distros</span>
+                <span class="chip">100% Bash</span>
+            </div>
+        </div>
+        <div class="term">
+            <div class="term-bar">
+                <span class="term-dot"></span><span class="term-dot"></span><span class="term-dot"></span>
+                <span class="term-title">sudo ./SL-Optimizer.sh</span>
+            </div>
+            <div class="term-body"><span class="prompt">$</span> <span class="out">sudo ./SL-Optimizer.sh</span>
+<span class="dim">==============================================================
+                     SL-OPTIMIZER
+==============================================================
+  Paso 1/4    (ingresa 0 para Cancelar)
+--------------------------------------------------------</span>
+Selecciona tu Distribución de Linux:
+
+   1) Debian/Ubuntu
+   2) Linux Mint
+   3) Arch
+   4) Fedora
+   5) openSUSE
+      <span class="dim">... 24 más</span>
+   0) Cancelar
+
+<span class="prompt">Elegí una opción [0-29]:</span> <span class="out">_</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="block">
+    <div class="wrap">
+        <div class="block-head">
+            <span class="chip">Por qué existe</span>
+            <h2>Un optimizador que no asume nada de tu sistema</h2>
+            <p>La mayoría de los scripts de "optimización" están pensados para una sola distro. SL-Optimizer te pregunta qué tenés instalado y aplica solo lo que corresponde a tu combinación de distro y entorno.</p>
+        </div>
+        <div class="grid-4">
+            <div class="feature">
+                <span class="num">01</span>
+                <h3>29 distribuciones</h3>
+                <p>De Debian y Arch a NixOS y Slackware. Si tu distro no está en la lista, la detecta sola.</p>
+            </div>
+            <div class="feature">
+                <span class="num">02</span>
+                <h3>Sin dependencias</h3>
+                <p>Menús hechos en Bash puro. No instala ningún programa externo para funcionar.</p>
+            </div>
+            <div class="feature">
+                <span class="num">03</span>
+                <h3>Confirmación antes de actuar</h3>
+                <p>Ves un resumen completo de los cambios y confirmás antes de que se aplique nada.</p>
+            </div>
+            <div class="feature">
+                <span class="num">04</span>
+                <h3>Seguro para re-ejecutar</h3>
+                <p>No duplica ajustes en tus archivos de configuración si corrés el script más de una vez.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block">
+    <div class="wrap two-col">
+        <div>
+            <div class="block-head" style="margin-bottom:20px">
+                <span class="chip chip-accent">Novedad</span>
+                <h2>Versión 0.2, lanzada hoy</h2>
+                <p>Pasamos de 4 a 29 distribuciones, sacamos la dependencia de <code>whiptail</code> y sumamos un paso de confirmación antes de aplicar cualquier cambio.</p>
+            </div>
+            <a href="about.html" class="btn btn-outline">Ver notas de la versión completas</a>
+        </div>
+        <div class="note-box">
+            <strong>Proyecto joven:</strong> SL-Optimizer se creó ayer. Todavía hay entornos de escritorio que solo reciben ajustes genéricos — mirá la página de <a href="compatibilidad.html" style="color:var(--accent-strong)">Compatibilidad</a> para ver el detalle exacto.
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="wrap">
+        <p>SL-Optimizer — proyecto de código abierto</p>
+        <div class="foot-links">
+            <a href="downloads.html">Descargas</a>
+            <a href="compatibilidad.html">Compatibilidad</a>
+            <a href="about.html">Acerca de</a>
+            <a href="https://github.com/OptiLooks/SL-Optimizer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
